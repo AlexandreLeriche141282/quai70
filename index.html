@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resto, votre restaurant gastronomique à Angoulème, cuisine du terroire avec des produits bio</title>
+  <meta name="description"
+    content="Resto est le nouveau restaurant tendance à Angoulème ouvert 7 jours sur 7, cuisine bio et de notre chef Russel Stephens...">
+
+  <link rel="shortcut icon" href="./assets/img/logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/styles/index.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      
+      <ul class="nav-elements">
+        <li><a href="#section1">à propos</a><span></span></li>
+        <li><a href="#form">reservations</a></li>
+        <li><a href="./assets/img/carte1.pdf" download="notre_carte.pdf">Notre carte</a></li>
+        <div class="logo">
+        <img src="./assets/img/logo2.png" alt="">
+        </div>
+        <li><a href="#event">évenements</a></li>
+        <li>shop</li>
+        <li>contact</li>
+      </ul>
+      <div class="nav-icons">
+        <i class="fab fa-facebook-f"></i>
+      </div>
+    </nav>
+    <div class="header-text">
+      <div class="text">
+        <h2>Bienvenue au Quai 70 !</h2>
+        
+        <img src="./assets/img/ic-plate-big.png" alt="icon-plate" />
+        <img src="./assets/img/verre-a-vin.png" alt="icon-plate" />
+        <img src="./assets/img/frites.svg" alt="icon-plate" />
+        <h6><span>B</span>RASSERIE - <span>B</span>AR - <span>F</span>RITERIE</h6>
+      </div>
+      <div class="reservation">
+        <a href="#form">réserver une table</a>
+        <i class="fa-solid fa-arrow-right fa-fade"></i>
+      </div>
+    </div>
+  </header>
+
+  <section class="section1" id="section1">
+    <div class="intro-text">
+      <h2>Découvrir</h2>
+      <h3>LE BON GOÛT DU FAIT MAISON</h3>
+      <img src="./assets/img/ic-plate.png" alt="icon-plate" />
+      <p>
+        Au cœur de l’étang du vignoble de Valenciennes, venez passer un moment inoubliable autour d’une frite, d’un bon plat fait maison ou tout simplement d’un verre !
+      </p>
+      <img src="./assets/img/avatar-01.jpg" alt="chef resto picture" />
+      <h4>Russell Stephens</h4>
+      <h5>CHEF COOK</h5>
+    </div>
+    <div class="intro-pic"></div>
+  </section>
+
+  <section class="section2">
+    <h2>Discover</h2>
+    <img src="./assets/img/ic-plate.png" alt="icon-plate" />
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./assets/img/dish-item-01.jpg" alt="meal-1" />
+          
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/img/dish-item-02.jpg" alt="meal-2" />
+          
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/img/dish-item-03.jpg" alt="meal-3" />
+          
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/img/dish-item-04.jpg" alt="meal-4" />
+          
+        </div>
+        <!-- Ajoutez plus de diapositives si nécessaire -->
+      </div>
+      <!-- Ajoutez les boutons de navigation -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <section class="section3">
+    <div class="form-content">
+      <div class="hours">
+        <div class="hours-content">
+          <h3>Jours</h3>
+          <h4>d'ouverture</h4>
+          <img src="./assets/img/ic-plate.png" alt="icon-plate" />
+          <h5>lundi et mardi fermeture</h5>
+          
+          <h5>merceredi / dimanche</h5>
+          <p>10:00 / 22:00</p>
+          
+          <h5>03 27 30 31 36</h5>
+        </div>
+      </div>
+      <div class="form-infos" id="form">
+        <div class="form-infos-container">
+          <h2>Reservation</h2>
+          <h3> Quai 70 ONLINE</h3>
+          <img src="./assets/img/ic-plate.png" alt="icon-plate" />
+          <div class="form-inputs">
+            <select name="" id="people">
+              <option value="">Personne</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+            </select>
+            <input type="date" id="bookingDate" name="bookingDate"/>
+            <select id="bookingTime" name="bookingTime">
+              <!-- Options with JS -->
+          </select>
+            <input type="text" placeholder="Nom" />
+            <input type="text" placeholder="Téléphone" />
+            <input type="email" placeholder="Email" />
+          </div>
+          <button>CONFIRMER</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section4" id="event">
+    <div class="events-container">
+      <h2>À venir</h2>
+      <h4>NOS ÉVENEMENTS</h4>
+      <img src="./assets/img/ic-plate.png" alt="icon-plate" />
+      <div class="event-grid">
+        <div class="event-1 event-left">
+          <div class="date">
+            <div class="date-content">
+              <h6>08</h6>
+              <span>Juin</span>
+            </div>
+          </div>
+          <div class="address">
+            <h3>Concert Live</h3>
+            <p>À partir de 19h00</p>
+            <h5>RESERVER VOTRE PLACE</h5>
+            <a href="tel:0327303136">03 27 30 31 36</a>
+          </div>
+        </div>
+        <div class="event-2 event-left">
+          <div class="date">
+            <div class="date-content">
+              <h6>18</h6>
+              <span>Juin</span>
+            </div>
+          </div>
+          <div class="address">
+            <h3>Soirée Années 50</h3>
+            <p>À partir de 20h00</p>
+            <h5>RESERVER VOTRE PLACE</h5>
+            <a href="tel:0327303136">03 27 30 31 36</a>
+          </div>
+        </div>
+        <div class="event-3">
+          <div class="address">
+            <div class="date">
+              <div class="date-content">
+                <h6>01</h6>
+                <span>Juillet</span>
+              </div>
+            </div>
+            <h3>Soirée Karaoké</h3>
+            <p>À partir de 19h00</p>
+            <h5>RESERVER VOTRE PLACE</h5>
+            <a href="tel:0327303136">03 27 30 31 36</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section5">
+    <div class="quote-container">
+      <div class="text-container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio corrupti
+        nemo expedita, quis tempora consequatur voluptatum. Nesciunt atque
+        laboriosam maxime dignissimos suscipit repellat pariatur perspiciatis
+        eaque ex ipsam temporibus beatae, esse voluptatibus sapiente error quia
+        totam. Laboriosam debitis rerum fugiat.
+      </div>
+      <h2>Russel Stepehns</h2>
+      <p>CEO - HeadPassion</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="left-part">
+        <img src="./assets/img/logo2.png" alt="">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero velit
+          quos explicabo veniam error obcaecati! Amet dignissimos quod dolorem
+          aspernatur? Fugiat quam ex illum optio.
+        </p>
+      </div>
+      <div class="right-part">
+        <div class="newsletter">
+          <h3>NEWSLETTER</h3>
+          <input type="email" placeholder="Your email address" />
+        </div>
+        <div class="follow-us">
+          <h3>SUIVEZ-NOUS :</h3>
+          <ul>
+            <li><i class="fab fa-facebook-f"></i></li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./index.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./caroussel.js"></script>
+</body>
+
+</html>

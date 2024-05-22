@@ -1,0 +1,124 @@
+header {
+  background: url(../img/Fotoram.io.jpg) center/cover;
+  color: white;
+  margin-bottom: 50px;
+  
+
+  nav {
+    height: 12vh;
+    display: grid;
+    grid-template-columns: 40 20% 40%;
+    align-items: center;
+    color: black;
+    
+    
+    background-color: white;
+    @media screen and (max-width: 680px) {
+      grid-template-columns: 50% 10% 40%;
+    }
+
+    
+    .logo img{
+      width: 13vw;
+    }
+    ul {
+      @include alignChildren(space-around);
+      text-transform: uppercase;
+      font-size: 0.7rem;
+      // padding: 0 30px;
+
+      @media screen and (max-width: 680px) {
+        visibility: hidden;
+      }
+
+      li {
+        cursor: pointer;
+        font-size: 1vw;
+        span{
+          color: rgb(198,165,67);
+        }
+        &:hover{
+          color: rgb(198,165,67);
+        }
+      }
+    }
+
+    .nav-icons {
+      @include alignChildren(space-around);
+      font-size: 0.8rem;
+
+      i {
+        transition: 0.2s;
+        cursor: pointer;
+
+        &:hover {
+          transform: scale(1.3);
+        }
+      }
+    }
+  }
+
+  
+  .reservation {
+    padding: 20px;
+    border-radius: 30px;
+    transition: 0.5s;
+    background-color: rgb(198,165,67);
+    &:hover{
+      background-color: rgba(198, 165, 67, 0.617);
+      
+    }
+    a{
+      text-decoration: none;
+      color: white;
+      text-transform: uppercase;
+
+    }
+    i{
+      padding-left: 5px;
+    }
+    
+  }
+  .header-text {
+    @include childCenter;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 88vh;
+    .text {
+      border: 1px solid white;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.5); 
+      h2 {
+        font-family: $font1;
+        font-size: 3rem;
+        font-weight: 100;
+        color: white;
+      }
+      h1 {
+        font-size: 3.2rem;
+        letter-spacing: 10px;
+        font-weight: 700;
+        margin-top: -28px;
+        font-family: $font2;
+
+        @media screen and (max-width: 680px) {
+          font-size: 2rem;
+          margin-top: -15px;
+        }
+      }
+      img {
+        height: 27px;
+        margin: 32px 5px;
+        
+      }
+      h6 {
+        font-size: 1rem;
+        letter-spacing: 2px;
+        font-weight: 100;
+        span{
+          color: rgb(198,165,67)
+        }
+      }
+    }
+  }
+}

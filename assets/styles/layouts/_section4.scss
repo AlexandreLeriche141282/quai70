@@ -1,0 +1,130 @@
+.section4 {
+  padding: 50px 20px 90px;
+
+  
+
+  .events-container {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    h2 {
+      font-size: 2.5rem;
+      color: $color1;
+      font-family: $font1;
+      font-weight: 100;
+    }
+    h4 {
+      letter-spacing: 2px;
+      font-size: 2rem;
+      font-weight: 900;
+      color: $white;
+      margin-top: -12px;
+      font-family: $font2;
+    }
+    img {
+      margin: 30px 0;
+    }
+    .event-grid {
+      display: grid;
+      grid-template-columns: 58% 42%;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+        "a b"
+        "c b";
+      gap: 20px;
+
+      .date-content {
+        background: $black;
+        height: 86px;
+        width: 86px;
+        margin: 0 auto;
+        color: $white;
+        @include childCenter;
+        flex-direction: column;
+        line-height: 22px;
+
+        h6 {
+          font-size: 1.7rem;
+        }
+      }
+
+      .address {
+        background: $white;
+
+        h3 {
+          letter-spacing: 1px;
+          font-size: 1.3rem;
+          font-weight: 500;
+          padding-left: 8px;
+        }
+        p {
+          font-size: 0.9rem;
+          color: $grey;
+          margin-top: 20px;
+          letter-spacing: 1px;
+        }
+        h5 {
+          letter-spacing: 2px;
+          margin-top: 25px;
+          margin-bottom: 10px;
+        }
+      }
+
+      .event-left {
+        display: grid;
+        grid-template-columns: 39% 61%;
+        text-align: left;
+        @media screen and (max-width: 680px) {
+          margin: 20px 0;
+         
+        }
+
+        .date {
+          @include childCenter;
+        }
+        .address {
+          color: $black;
+          padding: 30px 20px;
+        }
+      }
+
+      .event-1 {
+        grid-area: a;
+
+        .date {
+          background: url(../img/concert1.jpg) center/cover;
+        }
+      }
+      .event-2 {
+        grid-area: c;
+
+        .date {
+          background: url(../img/concert2.jpg) top/cover;
+        }
+      }
+      .event-3 {
+        grid-area: b;
+        background: url(../img/concert3.jpg) center/cover;
+        padding: 25px;
+
+        .address {
+          padding: 0 12px;
+          width: 80%;
+          margin: 0 auto;
+
+          h3 {
+            margin: 40px 0 15px;
+          }
+          h5 {
+            padding: 25px 0;
+          }
+          
+        }
+      }
+      @media screen and (max-width: 680px) {
+        display: block;
+       
+      }
+    }
+  }
+}
