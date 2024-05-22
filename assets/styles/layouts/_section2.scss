@@ -1,87 +1,52 @@
 .section2 {
   color: $white;
-  padding-bottom: 100px;
   position: relative;
+  overflow: hidden;
 
-  .swiper-button-next{
-    color: red;
+  h2{
+    margin: 30px 0;
+    color: $color1;
+    font-family: $font1;
+    font-size: calc(15px + 3vw);
+    font-weight: 100;
+  }
+
+  img{
+    margin-bottom: 2vw;
+  }
+
+  .swiper-button-next,.swiper-button-prev{
+    color: rgb(255, 255, 255);
     margin-right: 50px;
+    margin-top: 30px;
     
   }
   .swiper-button-next::after,
 .swiper-button-prev::after {
-  font-size: 24px; /* Adjust the icon size as needed */
+  font-size: 24px; 
 }
-  .swiper-slide img{
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #ccc;
+  opacity: 1;
+  border-radius: 50%;
+}
+
+/* Styliser le bullet actif */
+.swiper-pagination-bullet-active {
+  background-color: $color1;
+}
+  .swiper-wrapper {
+    margin-bottom: 20px;
+   img{
     width: 400px;
+    height: 400px;
+    border-radius: 10px;
+  } 
   }
-
-  // &:after {
-  //   content: "";
-  //   position: absolute;
-  //   height: 620px;
-  //   width: 100%;
-  //   // background: url(../img/bg-menu-01.jpg) center/cover;
-  //   left: 50%;
-  //   bottom: -330px;
-  //   transform: translate(-50%, -50%);
-  // }
-  // h2 {
-  //   color: $color1;
-  //   font-size: 2rem;
-  //   font-family: $font1;
-  //   font-weight: 500;
-  //   padding: 60px 0 30px;
-  // }
-  // ul {
-  //   @include alignChildren(space-around);
-  //   width: 50%;
-  //   margin: 30px auto;
-  //   min-width: 500px;
-
-  //   @media screen and (max-width: 680px) {
-  //     min-width: 200px;
-  //     width: 90%;
-  //     font-size: 0.65rem;
-  //   }
-
-  //   li {
-  //     border-bottom: 1px solid $grey;
-  //     padding-bottom: 8px;
-  //   }
-  // }
-  // .meals {
-  //   background: $white;
-  //   color: $black;
-  //   width: 85%;
-  //   max-width: 800px;
-  //   margin: 0 auto;
-  //   border-top: 4px solid $color1;
-  //   padding: 15px 0;
-  //   display: grid;
-  //   grid-template-columns: 50% 50%;
-  //   z-index: 1000;
-  //   position: relative;
-
-  //   @media screen and (max-width: 680px) {
-  //     grid-template-columns: 1fr;
-  //   }
-
-    // .swiper-slide {
-    //   display: grid;
-    //   grid-template-columns: 25% 60% 15%;
-    //   border-bottom: 1px dashed $grey;
-    //   padding: 30px 0;
-    //   margin: 0 20px;
-
-    //   img {
-    //     border-radius: 50px;
-    //     object-fit: cover;
-    //     width: 100%;
-    //     align-self: center;
-    //   }
-      
-      
-    // }
+  
+  
   }
 
