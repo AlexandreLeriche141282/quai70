@@ -25,7 +25,6 @@ header {
       @include alignChildren(space-around);
       text-transform: uppercase;
       font-size: 0.7rem;
-      // padding: 0 30px;
 
       @media screen and (max-width: 680px) {
         visibility: hidden;

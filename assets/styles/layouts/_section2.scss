@@ -3,7 +3,7 @@
   position: relative;
   overflow: hidden;
 
-  h2{
+  h2 {
     margin: 30px 0;
     color: $color1;
     font-family: $font1;
@@ -11,42 +11,73 @@
     font-weight: 100;
   }
 
-  img{
+  img {
     margin-bottom: 2vw;
   }
 
-  .swiper-button-next,.swiper-button-prev{
+  .swiper-button-next,
+  .swiper-button-prev {
     color: rgb(255, 255, 255);
-    margin-right: 50px;
-    margin-top: 30px;
-    
+    position: absolute;
+    top: 65%;
+    transform: translateY(-50%);
+    z-index: 10;
+
+    @media (max-width: 767px) { // Cible les écrans mobiles
+      display: none; // Masque les boutons de navigation
+    }
   }
+
+  .swiper-button-next {
+    right: 10px;
+  }
+
+  .swiper-button-prev {
+    left: 10px;
+  }
+
   .swiper-button-next::after,
-.swiper-button-prev::after {
-  font-size: 24px; 
-}
+  .swiper-button-prev::after {
+    font-size: 24px;
+  }
 
-.swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #ccc;
-  opacity: 1;
-  border-radius: 50%;
-}
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #ccc;
+    opacity: 1;
+    border-radius: 50%;
+  }
 
-/* Styliser le bullet actif */
-.swiper-pagination-bullet-active {
-  background-color: $color1;
-}
+  .swiper-pagination-bullet-active {
+    background-color: $color1;
+  }
+
   .swiper-wrapper {
     margin-bottom: 20px;
-   img{
-    width: 400px;
-    height: 400px;
-    border-radius: 10px;
-  } 
-  }
-  
-  
   }
 
+  .swiper-slide {
+    padding: 10px; // Ajouter un padding de 10px autour de chaque slide
+  }
+
+  .swiper-slide img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  // Media queries
+  @media (max-width: 768px) {
+    .swiper-slide img {
+      height: 300px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .swiper-slide img {
+      height: 200px;
+    }
+  }
+}

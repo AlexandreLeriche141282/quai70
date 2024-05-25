@@ -22,7 +22,7 @@ function initSwiper(images) {
 
   // Initialiser le carrousel Swiper
   const swiper = new Swiper('.swiper-container', {
-    slidesPerView: 3,
+    slidesPerView: 3, // Nombre d'images par ligne sur les grands écrans
     spaceBetween: 30,
     navigation: {
       nextEl: '.swiper-button-next',
@@ -32,11 +32,24 @@ function initSwiper(images) {
       el: '.swiper-pagination',
       clickable: true,
     },
-      loop: true,
-      autoplay: {
-        delay: 3000, // Délai de 3 secondes entre chaque diapositive
-        disableOnInteraction: false, // Continuer le défilement automatique même après une interaction manuelle
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    effect: 'slide',
+    speed: 1000,
+    breakpoints: {
+      // Définir les points de rupture pour les différentes tailles d'écran
+      320: {
+        slidesPerView: 1, // Afficher 1 image par ligne sur les petits écrans
       },
-    
+      768: {
+        slidesPerView: 2, // Afficher 2 images par ligne sur les écrans moyens
+      },
+      1024: {
+        slidesPerView: 3, // Afficher 3 images par ligne sur les grands écrans
+      },
+    },
   });
 }
