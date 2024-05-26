@@ -225,8 +225,8 @@ header .animate-text {
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateY(130px);
-            transform: translateY(130px);
+    -webkit-transform: translateY(160px);
+            transform: translateY(160px);
   }
 }
 @keyframes slide-in {
@@ -237,8 +237,8 @@ header .animate-text {
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateY(130px);
-            transform: translateY(130px);
+    -webkit-transform: translateY(160px);
+            transform: translateY(160px);
   }
 }
 header .header-text {
