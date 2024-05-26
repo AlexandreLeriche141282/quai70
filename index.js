@@ -61,3 +61,12 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialiser les options d'heure pour la date actuelle au chargement de la page
     initializeTimeOptions();
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const burgerMenu = document.querySelector('.burger-menu');
+    const navElements = document.querySelector('.nav-elements');
+  
+    burgerMenu.addEventListener('click', function() {
+      navElements.classList.toggle('active');
+    });
+  });
