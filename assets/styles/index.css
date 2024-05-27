@@ -306,7 +306,7 @@ header .header-text .text h6 span {
     grid-template-columns: 1fr;
   }
   .section1 .intro-pic {
-    min-height: 200px; /* Ajoutez une hauteur minimale */
+    min-height: 200px;
   }
 }
 .section1 .intro-text {
@@ -686,61 +686,8 @@ header .header-text .text h6 span {
   }
 }
 
-.section5 {
-  padding: 70px 0 230px;
-  position: relative;
-}
-.section5:after {
-  content: "";
-  height: 350px;
+.section5 iframe {
   width: 100%;
-  position: absolute;
-  background: url(../img/gmap.jpg) center/cover;
-  left: 0;
-  bottom: 0;
-}
-.section5 .quote-container {
-  background: #eee;
-  z-index: 3;
-  position: relative;
-  max-width: 1000px;
-  width: 90%;
-  margin: 0 auto;
-  padding: 65px 70px;
-  -webkit-box-shadow: 0 0 3px #333;
-          box-shadow: 0 0 3px #333;
-}
-.section5 .quote-container:before {
-  content: "";
-  position: absolute;
-  background: url(../img/avatar-02.jpg) center/cover;
-  height: 60px;
-  width: 60px;
-  top: -30px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  border-radius: 50px;
-}
-.section5 .quote-container .text-container {
-  line-height: 30px;
-}
-.section5 .quote-container .text-container:before {
-  content: "❝";
-}
-.section5 .quote-container .text-container:after {
-  content: "❞";
-}
-.section5 .quote-container .text-container:before, .section5 .quote-container .text-container:after {
-  font-size: 1.5rem;
-}
-.section5 .quote-container h2 {
-  margin: 30px 0 15px;
-  font-family: Roboto, serif;
-  font-weight: 100;
-}
-.section5 .quote-container p {
-  color: rgb(166, 114, 69);
 }
 
 footer {
