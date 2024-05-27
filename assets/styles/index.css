@@ -775,7 +775,7 @@ footer .footer-content .right-part {
   }
 }
 footer .footer-content .right-part h3 {
-  font-size: 0.85rem;
+  font-size: 0.75rem;
 }
 footer .footer-content .right-part input {
   margin-top: 15px;
@@ -790,12 +790,12 @@ footer .footer-content .right-part input {
   }
 }
 footer .footer-content .right-part .googleReview img {
-  width: 100px;
+  width: 80px;
 }
 footer .footer-content .right-part .follow-us {
   padding-top: 20px;
 }
 footer .footer-content .right-part .follow-us img {
-  width: 35px;
+  width: 30px;
   padding-top: 10px;
 }/*# sourceMappingURL=index.css.map */
