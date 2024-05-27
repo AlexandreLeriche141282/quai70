@@ -5,7 +5,7 @@ footer {
   color: $white;
 
   @media screen and (max-width: 680px) {
-    background: none;
+    padding: 15px 16px;
   }
 
   .footer-content {
@@ -15,10 +15,13 @@ footer {
     grid-template-columns: 50% 50%;
 
     @media screen and (max-width: 680px) {
-      grid-template-columns: 1fr;
+      // grid-template-columns: 1fr;
     }
 
     .left-part {
+      a{
+        color:rgb(198,165,67);
+      }
       padding-right: 30px;
       line-height: 30px;
       img{
@@ -26,7 +29,7 @@ footer {
       }
 
       @media screen and (max-width: 680px) {
-        display: none;
+        // display: none;
       }
 
       h2 {
@@ -64,33 +67,19 @@ footer {
           width: 150px;
         }
       }
-      .follow-us {
-        display: flex;
-        margin-top: 50px;
 
-        h3 {
-          @media screen and (max-width: 680px) {
-            display: none;
-          }
-        }
-
-        ul {
-          @include alignChildren(space-around);
-          flex-wrap: wrap;
-          color: #595956;
-          font-size: 0.8rem;
-          width: 200px;
-          cursor: pointer;
-
-          i {
-            transition: 0.2s;
-
-            &:hover {
-              transform: scale(1.5);
-            }
-          }
-        }
+      .googleReview img{
+        width: 100px;
       }
+      .follow-us {
+        padding-top: 20px;
+        img {
+        width: 35px;
+        padding-top: 10px;
+       
+      }
+      }
+      
     }
   }
 }

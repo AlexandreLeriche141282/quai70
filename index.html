@@ -31,7 +31,7 @@
         <li><a href="./assets/img/carte1.pdf" download="notre_carte.pdf">Notre carte</a></li>
         <li><a href="#event">évenements</a></li>
         <li><a href="#gallery">galerie</a></li>
-        <li>contact</li>
+        <li><a href="#footer">contact</a></li>
       </ul>
     </nav>
     <div class="header-text">
@@ -189,25 +189,28 @@
     </div>
   </section>
 
-  <footer>
+  <footer id="footer">
     <div class="footer-content">
-      <div class="left-part">
-        <img src="./assets/img/logo2.png" alt="">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero velit
-          quos explicabo veniam error obcaecati! Amet dignissimos quod dolorem
-          aspernatur? Fugiat quam ex illum optio.
-        </p>
-      </div>
+      <div class="left-part" itemscope itemtype="https://schema.org/PostalAddress">
+        <img src="./assets/img/logo2.png" alt="logo du restaurant">
+        <p itemprop="streetAddress">70 rue Malplaquet</p>
+				<p itemprop="postalCode">59300</p>
+				<p itemprop="addressLocality">Valenciennes</p>
+        <p>Tél : <a href="tel:0327303136">03 27 30 31 36</a></p>
+			</div>
       <div class="right-part">
         <div class="newsletter">
           <h3>NEWSLETTER</h3>
           <input type="email" placeholder="Your email address" />
         </div>
+        <div class="googleReview">
+          <h3>LAISSEZ-NOUS VOTRE AVIS </h3>
+          <a href="https://www.google.fr/search?sca_esv=76e9a7c290e4c885&sca_upv=1&sxsrf=ADLYWILXjfXGHpwHZStXa4GUyNf9m9GjCg:1716797536011&q=quai+70+valenciennes&uds=ADvngMgqSeFoPsQFehWsMP0m5_rpf-itsOs85Te1cokBQNusaZIyz5Q4IWQfaAL7uq_GwXQZ--QdIUGGFQePaWA2Xi5qlm3t1RCrUkP8YByjh0HcVt6PUW9KSqUg7iGJkvENBRdUunne&si=ACC90nwjPmqJHrCEt6ewASzksVFQDX8zco_7MgBaIawvaF4-7oMZ8246XPaVelYwpO0UHgVR_FxYJ95u2vv5WV796EqiXM8ygVBE3CRmXirvjx9TrqplZgc%3D&sa=X&ved=2ahUKEwj04KOasa2GAxX6UKQEHZL5DvoQ3PALegQIFBAE&biw=1912&bih=924&dpr=1"><img src="./assets/img/logo/google.png" alt="logo de google"></a>
+        </div>
         <div class="follow-us">
-          <h3>SUIVEZ-NOUS :</h3>
+          <h3>SUIVEZ-NOUS</h3>
           <ul>
-            <li><i class="fab fa-facebook-f"></i></li>
+            <li><a href="https://www.facebook.com/quai70" target="_blank"><img src="./assets/img/logo/facebook-3-3.svg" alt="suivez-nous sur facebook pour découvrir toutes nos actualités"></a></li>
             
           </ul>
         </div>

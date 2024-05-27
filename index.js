@@ -1,4 +1,6 @@
-document.addEventListener('DOMContentLoaded', function() {
+// Formulaire de réservation ---------------------------//
+
+document.addEventListener('DOMContentLoaded', function () {
     const bookingDate = document.getElementById('bookingDate');
     const bookingTime = document.getElementById('bookingTime');
 
@@ -62,6 +64,8 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeTimeOptions();
 });
 
+
+// Menu Burger ---------------------------------------- //
 document.addEventListener('DOMContentLoaded', function() {
     const burgerMenu = document.querySelector('.burger-menu');
     const navElements = document.querySelector('.nav-elements');

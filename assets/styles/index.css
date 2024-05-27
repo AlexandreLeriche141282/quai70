@@ -734,7 +734,7 @@ footer {
 }
 @media screen and (max-width: 680px) {
   footer {
-    background: none;
+    padding: 15px 16px;
   }
 }
 footer .footer-content {
@@ -743,22 +743,15 @@ footer .footer-content {
   display: grid;
   grid-template-columns: 50% 50%;
 }
-@media screen and (max-width: 680px) {
-  footer .footer-content {
-    grid-template-columns: 1fr;
-  }
-}
 footer .footer-content .left-part {
   padding-right: 30px;
   line-height: 30px;
 }
+footer .footer-content .left-part a {
+  color: rgb(198, 165, 67);
+}
 footer .footer-content .left-part img {
   width: 13vw;
-}
-@media screen and (max-width: 680px) {
-  footer .footer-content .left-part {
-    display: none;
-  }
 }
 footer .footer-content .left-part h2 {
   font-family: Allura, cursive;
@@ -796,38 +789,13 @@ footer .footer-content .right-part input {
     width: 150px;
   }
 }
+footer .footer-content .right-part .googleReview img {
+  width: 100px;
+}
 footer .footer-content .right-part .follow-us {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 50px;
+  padding-top: 20px;
 }
-@media screen and (max-width: 680px) {
-  footer .footer-content .right-part .follow-us h3 {
-    display: none;
-  }
-}
-footer .footer-content .right-part .follow-us ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  color: #595956;
-  font-size: 0.8rem;
-  width: 200px;
-  cursor: pointer;
-}
-footer .footer-content .right-part .follow-us ul i {
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
-footer .footer-content .right-part .follow-us ul i:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+footer .footer-content .right-part .follow-us img {
+  width: 35px;
+  padding-top: 10px;
 }/*# sourceMappingURL=index.css.map */
