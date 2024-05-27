@@ -305,6 +305,9 @@ header .header-text .text h6 span {
   .section1 {
     grid-template-columns: 1fr;
   }
+  .section1 .intro-pic {
+    min-height: 200px; /* Ajoutez une hauteur minimale */
+  }
 }
 .section1 .intro-text {
   margin: 15px;
@@ -322,12 +325,31 @@ header .header-text .text h6 span {
   font-family: Poppins, serif;
 }
 .section1 .intro-text img {
-  margin: 26px;
+  margin: 26px 0;
 }
-.section1 .intro-text img:nth-of-type(2) {
-  height: 70px;
-  border-radius: 150px;
-  margin-bottom: 8px;
+.section1 .intro-text .imgContainer {
+  position: relative;
+  height: 200px;
+}
+.section1 .intro-text .imgContainer img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 5px; /* Ajoutez un espace entre l'image et la bordure */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; /* Inclut le padding dans les dimensions de l'image */
+}
+.section1 .intro-text .imgContainer::after {
+  content: "";
+  position: absolute;
+  top: 55%;
+  left: 53%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 95%;
+  height: 95%;
+  border: 1px solid rgb(255, 255, 255);
 }
 .section1 .intro-text h4 {
   font-family: Poppins, serif;
@@ -338,12 +360,7 @@ header .header-text .text h6 span {
   font-size: 0.7rem;
 }
 .section1 .intro-pic {
-  background: url(../img/plat1.jpg) center/cover;
-}
-@media screen and (max-width: 680px) {
-  .section1 .intro-pic {
-    display: none;
-  }
+  background: url(../img/vue2.jpg) center/cover;
 }
 
 .section2 {
