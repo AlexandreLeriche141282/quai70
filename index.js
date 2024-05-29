@@ -74,3 +74,15 @@ document.addEventListener('DOMContentLoaded', function() {
       navElements.classList.toggle('active');
     });
   });
+
+
+// --------------ApparitiontextePhotoscroll-----------------// 
+const sr = ScrollReveal();
+
+sr.reveal(".textApparition", {
+    duration: 1000,
+    origin: 'top',
+    distance: '-200px',
+    scale: '0.5',
+    reset:'true'
+});
