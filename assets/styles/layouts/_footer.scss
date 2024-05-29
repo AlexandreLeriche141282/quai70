@@ -29,7 +29,9 @@ footer {
       }
 
       @media screen and (max-width: 680px) {
-        // display: none;
+        span{
+          font-size: 11px;
+        }
       }
 
       h2 {

@@ -309,29 +309,35 @@ header .header-text .text h6 span {
     min-height: 200px;
   }
 }
-.section1 .intro-text {
+.section1 .intro-text,
+.section1 .intro-text2 {
   margin: 15px;
   padding: 30px 15px;
   border: 1px dashed rgb(166, 114, 69);
 }
-.section1 .intro-text h2 {
+.section1 .intro-text h2,
+.section1 .intro-text2 h2 {
   color: rgb(166, 114, 69);
   font-family: Allura, cursive;
   font-size: 2rem;
   font-weight: 500;
 }
-.section1 .intro-text h3 {
+.section1 .intro-text h3,
+.section1 .intro-text2 h3 {
   margin-top: -12px;
   font-family: Poppins, serif;
 }
-.section1 .intro-text img {
+.section1 .intro-text img,
+.section1 .intro-text2 img {
   margin: 26px 0;
 }
-.section1 .intro-text .imgContainer {
+.section1 .intro-text .imgContainer,
+.section1 .intro-text2 .imgContainer {
   position: relative;
   height: 200px;
 }
-.section1 .intro-text .imgContainer img {
+.section1 .intro-text .imgContainer img,
+.section1 .intro-text2 .imgContainer img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -340,7 +346,8 @@ header .header-text .text h6 span {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; /* Inclut le padding dans les dimensions de l'image */
 }
-.section1 .intro-text .imgContainer::after {
+.section1 .intro-text .imgContainer::after,
+.section1 .intro-text2 .imgContainer::after {
   content: "";
   position: absolute;
   top: 55%;
@@ -351,16 +358,21 @@ header .header-text .text h6 span {
   height: 95%;
   border: 1px solid rgb(255, 255, 255);
 }
-.section1 .intro-text h4 {
+.section1 .intro-text h4,
+.section1 .intro-text2 h4 {
   font-family: Poppins, serif;
   font-weight: 100;
 }
-.section1 .intro-text h5 {
+.section1 .intro-text h5,
+.section1 .intro-text2 h5 {
   color: rgb(182, 182, 182);
   font-size: 0.7rem;
 }
 .section1 .intro-pic {
   background: url(../img/vue2.jpg) center/cover;
+}
+.section1 .intro-pic2 {
+  background: url(../img/frite.jpg) center/cover;
 }
 
 .section2 {
@@ -546,10 +558,7 @@ header .header-text .text h6 span {
   transition: 0.2s;
 }
 .section3 .form-content .form-infos button:hover {
-  -webkit-transform: translateX(3px);
-          transform: translateX(3px);
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.433);
-          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.433);
+  background-color: rgb(166, 114, 69);
 }
 
 .section4 {
@@ -689,6 +698,43 @@ header .header-text .text h6 span {
 .section5 iframe {
   width: 100%;
 }
+.section5 .services {
+  color: white;
+}
+.section5 .services ul {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.section5 .services ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 60px;
+  width: 80px;
+}
+@media screen and (max-width: 680px) {
+  .section5 .services ul li {
+    width: 50px;
+  }
+}
+.section5 .services ul li i {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
 
 footer {
   background: url(../img/bg-footer.jpg) center/cover;
@@ -716,6 +762,11 @@ footer .footer-content .left-part a {
 }
 footer .footer-content .left-part img {
   width: 13vw;
+}
+@media screen and (max-width: 680px) {
+  footer .footer-content .left-part span {
+    font-size: 11px;
+  }
 }
 footer .footer-content .left-part h2 {
   font-family: Allura, cursive;

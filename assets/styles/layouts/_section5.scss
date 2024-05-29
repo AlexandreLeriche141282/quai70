@@ -2,4 +2,30 @@
   iframe{
     width: 100%;
   }
-}
+  .services {
+    color: white;
+    ul {
+      padding: 0; // Supprime le padding par défaut de la liste
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  
+      li {
+        display: flex;
+        flex-direction: column; // Empile l'icône et le texte verticalement
+        align-items: center; // Centre l'icône et le texte horizontalement
+        margin: 60px; // Espace entre les éléments de la liste
+        width: 80px;
+        @media screen and (max-width:680px){
+          width: 50px;
+        }
+  
+        i {
+          font-size: 2rem; // Augmente la taille de l'icône
+          margin-bottom: 8px; // Espace entre l'icône et le texte
+        }
+      }
+    }
+  }
+  }
+

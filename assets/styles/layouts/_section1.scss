@@ -11,7 +11,8 @@
     }
   }
 
-  .intro-text {
+  .intro-text,
+  .intro-text2 {
     margin: 15px;
     padding: 30px 15px;
     border: 1px dashed $color1;
@@ -63,5 +64,9 @@
   }
   .intro-pic {
     background: url(../img/vue2.jpg) center/cover;
+  }
+  .intro-pic2 {
+    background: url(../img/frite.jpg) center/cover;
+    
   }
 }
