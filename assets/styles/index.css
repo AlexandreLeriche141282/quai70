@@ -46,7 +46,7 @@ a:hover {
 }
 
 header {
-  background: url(../img/Fotoram.io.jpg) center/cover;
+  background: url(../img/salleQuai70.jpg) center/cover;
   color: white;
   margin-bottom: 50px;
   /* Styles pour le menu mobile */
@@ -813,4 +813,12 @@ footer .footer-content .right-part .follow-us {
 footer .footer-content .right-part .follow-us img {
   width: 30px;
   padding-top: 10px;
+}
+footer .footer-content .right-part .follow-us ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+footer .footer-content .right-part .follow-us ul li {
+  padding-right: 15px;
 }/*# sourceMappingURL=index.css.map */
