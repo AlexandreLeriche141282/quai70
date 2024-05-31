@@ -1,5 +1,5 @@
 header {
-  background: url(../img/salleQuai70.webp) center/cover;
+  background: url(../img/sallequai70.webp) center/cover;
   color: white;
   margin-bottom: 50px;
   
@@ -133,7 +133,7 @@ header {
   .text{
     margin: 0 20px;
     @media screen and (max-width: 680px) {
-      
+      margin: 0 50px;
     }
     
   }
@@ -142,6 +142,7 @@ header {
     opacity: 0;
     transform: translateY(-50px);
     animation: slide-in 1s ease-out forwards;
+    
   }
   
   @keyframes slide-in {

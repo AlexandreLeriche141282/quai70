@@ -46,7 +46,7 @@ a:hover {
 }
 
 header {
-  background: url(../img/salleQuai70.webp) center/cover;
+  background: url(../img/sallequai70.webp) center/cover;
   color: white;
   margin-bottom: 50px;
   /* Styles pour le menu mobile */
@@ -209,6 +209,11 @@ header .reservation a:hover {
 }
 header .text {
   margin: 0 20px;
+}
+@media screen and (max-width: 680px) {
+  header .text {
+    margin: 0 50px;
+  }
 }
 header .animate-text {
   opacity: 0;
