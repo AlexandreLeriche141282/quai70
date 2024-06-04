@@ -87,7 +87,7 @@ sr.reveal(".textApparition", {
     reset:'true'
 });
 sr.reveal(".intro-pic", {
-    duration: 1000,
+    duration: 2000,
     opacity: 0, // Commence à une opacité de 0
     reset: true
 });

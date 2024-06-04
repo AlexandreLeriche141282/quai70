@@ -2,7 +2,6 @@ header {
   background: url(../img/sallequai70.webp) center/cover;
   color: white;
   margin-bottom: 50px;
-  
 
   nav {
     height: 12vh;
@@ -10,14 +9,12 @@ header {
     grid-template-columns: 20% 80%;
     align-items: center;
     color: black;
-    
-    
     background-color: white;
+    
     @media screen and (max-width: 680px) {
       grid-template-columns: 50% 50%;
     }
 
-    
     .logo img {
       width: calc(100px + 8vw); /* Taille par défaut utilisant calc() */
       opacity: 0;
@@ -36,6 +33,7 @@ header {
         transform: translateX(0);
       }
     }
+
     ul {
       @include alignChildren(space-around);
       text-transform: uppercase;
@@ -48,10 +46,10 @@ header {
       li {
         cursor: pointer;
         font-size: 1vw;
-        span{
+        span {
           color: rgb(198,165,67);
         }
-        &:hover{
+        &:hover {
           color: rgb(198,165,67);
         }
       }
@@ -71,26 +69,27 @@ header {
       }
     }
   }
+
   .burger-menu {
     display: none;
     cursor: pointer;
   }
-  
+
   .burger-menu img {
     font-size: 2rem;
   }
-  
+
   /* Styles pour le menu mobile */
   .nav-elements {
     display: flex;
     list-style: none;
   }
-  
+
   @media screen and (max-width: 680px) {
     .burger-menu {
       display: block;
     }
-  
+
     .nav-elements {
       flex-direction: column;
       position: absolute;
@@ -103,39 +102,38 @@ header {
       transform: translateY(-10%);
       transition: visibility 0.6s, opacity 0.6s, transform 0.6s;
     }
-  
+
     .nav-elements.active {
       visibility: visible;
       opacity: 1;
       transform: translateY(0);
     }
-  
+
     .nav-elements li {
       padding: 10px 20px;
       border-bottom: 1px solid #ddd;
       font-size: 13px;
     }
   }
-  
-  
+
   .reservation a {
     padding: 20px;
     border-radius: 30px;
     transition: 0.5s;
     background-color: rgb(198,165,67);
     text-decoration: none;
-      color: white;
-      text-transform: uppercase;
-    &:hover{
+    color: white;
+    text-transform: uppercase;
+    &:hover {
       background-color: rgba(198, 165, 67, 0.617);
     }
   }
-  .text{
+
+  .text {
     margin: 0 20px;
     @media screen and (max-width: 680px) {
       margin: 0 50px;
     }
-    
   }
 
   .animate-text {
@@ -143,8 +141,11 @@ header {
     transform: translateY(-50px);
     animation: slide-in 1s ease-out forwards;
     
+    @media screen and (max-width: 680px) {
+      animation: slide-in 1s ease-out forwards, slightBounce 0.5s 1s forwards;
+    }
   }
-  
+
   @keyframes slide-in {
     0% {
       opacity: 0;
@@ -155,6 +156,19 @@ header {
       transform: translateY(160px);
     }
   }
+
+  @keyframes slightBounce {
+    0% {
+      transform: translateY(160px);
+    }
+    50% {
+      transform: translateY(150px);
+    }
+    100% {
+      transform: translateY(160px);
+    }
+  }
+
   .header-text {
     @include childCenter;
     flex-direction: column;
@@ -185,16 +199,16 @@ header {
       img {
         height: 27px;
         margin: 32px 5px;
-        
       }
       h6 {
         font-size: 1rem;
         letter-spacing: 2px;
         font-weight: 100;
-        span{
-          color: rgb(198,165,67)
+        span {
+          color: rgb(198,165,67);
         }
       }
     }
   }
 }
+

@@ -222,6 +222,12 @@ header .animate-text {
   -webkit-animation: slide-in 1s ease-out forwards;
           animation: slide-in 1s ease-out forwards;
 }
+@media screen and (max-width: 680px) {
+  header .animate-text {
+    -webkit-animation: slide-in 1s ease-out forwards, slightBounce 0.5s 1s forwards;
+            animation: slide-in 1s ease-out forwards, slightBounce 0.5s 1s forwards;
+  }
+}
 @-webkit-keyframes slide-in {
   0% {
     opacity: 0;
@@ -242,6 +248,34 @@ header .animate-text {
   }
   100% {
     opacity: 1;
+    -webkit-transform: translateY(160px);
+            transform: translateY(160px);
+  }
+}
+@-webkit-keyframes slightBounce {
+  0% {
+    -webkit-transform: translateY(160px);
+            transform: translateY(160px);
+  }
+  50% {
+    -webkit-transform: translateY(150px);
+            transform: translateY(150px);
+  }
+  100% {
+    -webkit-transform: translateY(160px);
+            transform: translateY(160px);
+  }
+}
+@keyframes slightBounce {
+  0% {
+    -webkit-transform: translateY(160px);
+            transform: translateY(160px);
+  }
+  50% {
+    -webkit-transform: translateY(150px);
+            transform: translateY(150px);
+  }
+  100% {
     -webkit-transform: translateY(160px);
             transform: translateY(160px);
   }
