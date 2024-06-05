@@ -2,14 +2,20 @@ header {
   background: url(../img/sallequai70.webp) center/cover;
   color: white;
   margin-bottom: 50px;
+  height: 100vh;
 
   nav {
-    height: 12vh;
+    height: 11vh;
     display: grid;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
     grid-template-columns: 20% 80%;
     align-items: center;
     color: black;
     background-color: white;
+    transition: top 0.3s ease-in-out;
+    
     
     @media screen and (max-width: 680px) {
       grid-template-columns: 50% 50%;
@@ -69,7 +75,7 @@ header {
       }
     }
   }
-
+ 
   .burger-menu {
     display: none;
     cursor: pointer;
@@ -93,7 +99,7 @@ header {
     .nav-elements {
       flex-direction: column;
       position: absolute;
-      top: 12vh;
+      top: 11vh;
       left: 0;
       width: 100%;
       background-color: white;

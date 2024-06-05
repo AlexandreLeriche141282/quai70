@@ -69,11 +69,22 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function() {
     const burgerMenu = document.querySelector('.burger-menu');
     const navElements = document.querySelector('.nav-elements');
-  
+    const navLinks = document.querySelectorAll('.nav-elements li a');
+
     burgerMenu.addEventListener('click', function() {
       navElements.classList.toggle('active');
     });
-  });
+
+    // Fermer le menu en mode mobile après avoir cliqué sur un lien de navigation
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        const isMobile = window.innerWidth <= 768; // Définissez la largeur maximale pour le mode mobile
+        if (isMobile && navElements.classList.contains('active')) {
+          navElements.classList.remove('active');
+        }
+      });
+    });
+});
 
 
 // --------------ApparitiontextePhotoscroll-----------------// 
@@ -91,3 +102,19 @@ sr.reveal(".intro-pic", {
     opacity: 0, // Commence à une opacité de 0
     reset: true
 });
+
+// -------------- Disparition et Apparition navBar ----------//
+// Sélectionnez la navigation
+const nav = document.querySelector('nav');
+let lastScroll = 0;
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY < lastScroll) {
+        nav.style.top ="0";
+    } else {
+        nav.style.top = "-140px"
+    }
+    lastScroll = window.scrollY;
+
+});
+
