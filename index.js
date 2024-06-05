@@ -93,7 +93,6 @@ const sr = ScrollReveal();
 sr.reveal(".textApparition", {
     duration: 1000,
     origin: 'top',
-    distance: '-200px',
     scale: '0.5',
     reset:'true'
 });
@@ -101,6 +100,26 @@ sr.reveal(".intro-pic", {
     duration: 2000,
     opacity: 0, // Commence à une opacité de 0
     reset: true
+});
+sr.reveal(".event-1", {
+    duration: 2000,
+    opacity: 0,
+    reset: true,
+    delay: 0, // Aucun délai pour le premier élément
+});
+
+sr.reveal(".event-2", {
+    duration: 2000,
+    opacity: 0,
+    reset: true,
+    delay: 500, // Délai de 500 millisecondes pour le deuxième élément
+});
+
+sr.reveal(".event-3", {
+    duration: 2000,
+    opacity: 0,
+    reset: true,
+    delay: 1000, // Délai de 1000 millisecondes pour le troisième élément
 });
 
 // -------------- Disparition et Apparition navBar ----------//
